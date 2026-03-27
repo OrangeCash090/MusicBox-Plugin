@@ -1,0 +1,13 @@
+{
+  "uuid": "638116d5-ffa8-4a63-bee2-831dc4b00350",
+  "plugin_name": "MusicBox",
+  "plugin_author": "OrangeCash090",
+  "plugin_description": "A Minecraft MIDI Player.",
+  "plugin_version": "1.0.0",
+  "game_version": "1.26.3",
+  "supported_game_version_ranges": [
+    "0.0.0-9.99.9"
+  ],
+  "runtime_version": 7,
+  "target_assembly": "MusicBox.dll"
+}

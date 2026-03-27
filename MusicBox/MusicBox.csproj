@@ -1,0 +1,50 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <CopyLocalLockFileAssemblies>true</CopyLocalLockFileAssemblies>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <Platforms>x64</Platforms>
+    <LangVersion>13</LangVersion>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+
+	<PropertyGroup>
+		<OnixPluginUUID>638116d5-ffa8-4a63-bee2-831dc4b00350</OnixPluginUUID>
+	</PropertyGroup> 
+
+	<Target Name="PostBuild" AfterTargets="PostBuildEvent">
+        <Exec Condition="'$(OS)' == 'Windows_NT'" Command="del &quot;$(OutDir)OnixRuntime.pdb&quot; &gt; NUL" IgnoreExitCode="true" />
+        <Exec Condition="'$(OS)' == 'Windows_NT'" Command="del &quot;$(OutDir)OnixRuntime.dll&quot; &gt; NUL" IgnoreExitCode="true" />
+        <Exec Condition="'$(OS)' != 'Windows_NT'" Command="rm &quot;$(OutDir)OnixRuntime.pdb&quot; &gt; NUL" IgnoreExitCode="true" />
+        <Exec Condition="'$(OS)' != 'Windows_NT'" Command="rm &quot;$(OutDir)OnixRuntime.dll&quot; &gt; NUL" IgnoreExitCode="true" />
+        <Exec Command="xcopy /C /Y &quot;$(SolutionDir)README.md&quot; &quot;$(ProjectDir)Assets&quot;" IgnoreExitCode="true" />
+		<Exec Condition="'$(ServerPluginBuild)' != 'TRUE'" Command="rmdir /Q /S &quot;$(LOCALAPPDATA)\Packages\Microsoft.MinecraftUWP_8wekyb3d8bbwe\RoamingState\OnixClient\Plugins\plugins\$(OnixPluginUUID)&quot;" IgnoreExitCode="true" />
+		<Exec Condition="'$(ServerPluginBuild)' != 'TRUE'" Command="xcopy /S /C /I /Y &quot;$(OutDir)&quot; &quot;$(LOCALAPPDATA)\Packages\Microsoft.MinecraftUWP_8wekyb3d8bbwe\RoamingState\OnixClient\Plugins\plugins\$(OnixPluginUUID)&quot;" />
+		<Exec Condition="'$(ServerPluginBuild)' != 'TRUE'" Command="xcopy /E /C /I /Y &quot;$(ProjectDir)Assets&quot; &quot;$(LOCALAPPDATA)\Packages\Microsoft.MinecraftUWP_8wekyb3d8bbwe\RoamingState\OnixClient\Plugins\plugins\$(OnixPluginUUID)\assets&quot;" />
+		<Exec Condition="'$(ServerPluginBuild)' != 'TRUE'" Command="xcopy /C /Y &quot;$(ProjectDir)manifest.json&quot; &quot;$(LOCALAPPDATA)\Packages\Microsoft.MinecraftUWP_8wekyb3d8bbwe\RoamingState\OnixClient\Plugins\plugins\$(OnixPluginUUID)&quot;" />
+		<Exec Condition="'$(ServerPluginBuild)' != 'TRUE'" Command="echo OnixClient > &quot;$(LOCALAPPDATA)\Packages\Microsoft.MinecraftUWP_8wekyb3d8bbwe\RoamingState\OnixClient\Plugins\plugins\$(OnixPluginUUID)\CompletePluginFlag.txt&quot;" />
+		<Exec Condition="'$(ServerPluginBuild)' == 'TRUE'" Command="echo OnixClient > &quot;$(SolutionDir)BuildSuccessful.txt&quot;" />
+	</Target>
+
+    <ItemGroup>
+        <Reference Condition="'$(ServerPluginBuild)' == 'TRUE'" Include="OnixRuntime"> </Reference>
+        <Reference Condition="'$(ServerPluginBuild)' != 'TRUE'" Include="OnixRuntime">
+        <HintPath>$(LOCALAPPDATA)\Packages\Microsoft.MinecraftUWP_8wekyb3d8bbwe\RoamingState\OnixClient\Plugins\runtime\OnixRuntime.dll</HintPath>
+        </Reference>
+
+        <Analyzer Condition="'$(ServerPluginBuild)' == 'TRUE'" Include="$(ServerPluginBuildRuntime)/OnixRuntime.CodeGenerators.dll"/>
+        <Analyzer Condition="'$(ServerPluginBuild)' != 'TRUE'" Include="$(LOCALAPPDATA)\Packages\Microsoft.MinecraftUWP_8wekyb3d8bbwe\RoamingState\OnixClient\Plugins\runtime\OnixRuntime.CodeGenerators.dll"/>
+    </ItemGroup>
+
+    <PropertyGroup Condition="'$(ServerPluginBuild)' == 'TRUE'">
+        <AssemblySearchPaths>$(ServerPluginBuildRuntime);$(AssemblySearchPaths);</AssemblySearchPaths>
+    </PropertyGroup>
+
+	<ItemGroup>
+	  <PackageReference Include="ImGui.NET" Version="1.91.6.1" />
+	  <PackageReference Include="Melanchall.DryWetMidi" Version="8.0.3" />
+	</ItemGroup>
+
+</Project>

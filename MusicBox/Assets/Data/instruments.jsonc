@@ -1,0 +1,648 @@
+{
+    "instruments": [
+        // 0 - Acoustic Grand Piano
+        [
+            "note.harp",
+            0
+        ],
+        // 1 - Bright Acoustic Piano
+        [
+            "note.harp",
+            0
+        ],
+        // 2 - Electric Grand Piano
+        [
+            "note.pling",
+            0
+        ],
+        // 3 - Honky-tonk Piano
+        [
+            "note.harp",
+            0
+        ],
+        // 4 - Electric Piano 1
+        [
+            "note.pling",
+            0
+        ],
+        // 5 - Electric Piano 2
+        [
+            "note.pling",
+            0
+        ],
+        // 6 - Harpsichord
+        [
+            "note.harp",
+            0
+        ],
+        // 7 - Clavinet
+        [
+            "note.trumpet",
+            0.5
+        ],
+        // 8 - Celesta
+        [
+            "note.bell",
+            -24
+        ],
+        // 9 - Glockenspiel
+        [
+            "note.bell",
+            -24
+        ],
+        // 10 - Music Box
+        [
+            "note.bell",
+            -24
+        ],
+        // 11 - Vibraphone
+        [
+            "note.bell",
+            -24
+        ],
+        // 12 - Marimba
+        [
+            "note.xylophone",
+            0
+        ],
+        // 13 - Xylophone
+        [
+            "note.xylophone",
+            0
+        ],
+        // 14 - Tubular Bells
+        [
+            "random.orb",
+            -33
+        ],
+        // 15 - Dulcimer
+        [
+            "note.bell",
+            0
+        ],
+        // 16 - Drawbar Organ
+        [
+            "note.bass",
+            36
+        ],
+        // 17 - Percussive Organ
+        [
+            "note.bass",
+            36
+        ],
+        // 18 - Rock Organ
+        [
+            "note.flute",
+            -12
+        ],
+        // 19 - Church Organ
+        [
+            "note.trumpet",
+			0.5
+        ],
+        // 20 - Reed Organ
+        [
+            "note.trumpet",
+			0.5
+        ],
+		// 21 - Accordion
+		[
+			"note.flute",
+			-12
+		],
+		// 22 - Harmonica
+		[
+			"note.flute",
+			-12
+		],
+		// 23 - Tango Accordion
+		[
+			"note.flute",
+			-12
+		],
+        // 24 - Nylon Guitar
+        [
+            "note.guitar",
+            12
+        ],
+        // 25 - Steel Guitar
+        [
+            "note.guitar",
+            12
+        ],
+        // 26 - Jazz Guitar
+        [
+            "note.pling",
+            12
+        ],
+        // 27 - Clean Guitar
+        [
+            "note.guitar",
+            12
+        ],
+        // 28 - Muted Guitar
+        [
+            "note.guitar",
+            12
+        ],
+        // 29 - Overdriven Guitar
+        [
+            "note.guitar",
+            12
+        ],
+        // 30 - Distortion Guitar
+        [
+            "note.guitar",
+            12
+        ],
+        // 31 - Guitar Harmonics
+        [
+            "note.guitar",
+            12
+        ],
+        // 32 - Acoustic Bass
+        [
+            "note.bass",
+            24
+        ],
+        // 33 - Finger Bass
+        [
+            "note.bass",
+            24
+        ],
+        // 34 - Pick Bass
+        [
+            "note.bass",
+            24
+        ],
+        // 35 - Fretless Bass
+        [
+            "note.bass",
+            24
+        ],
+        // 36 - Slap Bass 1
+        [
+            "note.bass",
+            24
+        ],
+        // 37 - Slap Bass 2
+        [
+            "note.bass",
+            24
+        ],
+        // 38 - Synth Bass 1
+        [
+            "note.bit",
+            24
+        ],
+        // 39 - Synth Bass 2
+        [
+            "note.bit",
+            24
+        ],
+        // 40 - Violin
+        [
+            "note.flute",
+            -12
+        ],
+        // 41 - Viola
+        [
+            "note.flute",
+            -12
+        ],
+        // 42 - Cello
+        [
+            "note.flute",
+            -12
+        ],
+        // 43 - Contrabass
+        [
+            "note.flute",
+            -12
+        ],
+        // 44 - Tremolo Strings
+        [
+            "note.flute",
+            -12
+        ],
+        // 45 - Pizzicato Strings
+        [
+            "note.flute",
+            -12
+        ],
+        // 46 - Orchestral Harp
+        [
+            "note.harp",
+            0
+        ],
+        // 47 - Timpani
+        [
+            "note.snare",
+            0
+        ],
+        // 48 - String Ensemble 1
+        [
+            "note.flute",
+            -12
+        ],
+        // 49 - String Ensemble 2
+        [
+            "note.flute",
+            -12
+        ],
+        // 50 - Synth Strings 1
+        [
+            "note.flute",
+            -12
+        ],
+        // 51 - Synth Strings 2
+        [
+            "note.flute",
+            -12
+        ],
+        // 52 - Choir Aahs
+        [
+            "note.flute",
+            -12
+        ],
+        // 53 - Voice Oohs
+        [
+            "note.flute",
+            -12
+        ],
+        // 54 - Synth Voice
+        [
+            "note.flute",
+            -12
+        ],
+        // 55 - Orchestra Hit
+        [
+            "note.flute",
+            -12
+        ],
+        // 56 - Trumpet
+        [
+            "note.trumpet",
+            0.5
+        ],
+        // 57 - Trombone
+        [
+            "note.trumpet",
+            0.5
+        ],
+        // 58 - Tuba
+        [
+            "note.trumpet",
+            -11.5
+        ],
+        // 59 - Muted Trumpet
+        [
+            "note.trumpet",
+            0.5
+        ],
+        // 60 - French Horn
+        [
+            "note.trumpet",
+            0.5
+        ],
+        // 61 - Brass Section
+        [
+            "note.trumpet",
+            0.5
+        ],
+        // 62 - Synth Brass 1
+        [
+            "note.trumpet",
+            0.5
+        ],
+        // 63 - Synth Brass 2
+        [
+            "note.trumpet",
+            0.5
+        ],
+        // 64 - Soprano Sax
+        [
+            "note.trumpet",
+			0.5
+        ],
+        // 65 - Alto Sax
+        [
+            "note.trumpet",
+			0.5
+        ],
+        // 66 - Tenor Sax
+        [
+            "note.trumpet",
+			0.5
+        ],
+        // 67 - Baritone Sax
+        [
+            "note.trumpet",
+			0.5
+        ],
+        // 68 - Oboe
+        [
+            "note.trumpet",
+			0.5
+        ],
+        // 69 - English Horn
+        [
+            "note.trumpet",
+			0.5
+        ],
+        // 70 - Bassoon
+        [
+            "note.trumpet",
+			0.5
+        ],
+        // 71 - Clarinet
+        [
+            "note.trumpet",
+			0.5
+        ],
+        // 72 - Piccolo
+        [
+            "note.flute",
+            -12
+        ],
+        // 73 - Flute
+        [
+            "note.flute",
+            -12
+        ],
+        // 74 - Recorder
+        [
+            "note.flute",
+            -12
+        ],
+        // 75 - Pan Flute
+        [
+            "note.flute",
+            -12
+        ],
+        // 76 - Blown Bottle
+        [
+            "note.flute",
+            -12
+        ],
+        // 77 - Shakuhachi
+        [
+            "note.flute",
+            -12
+        ],
+        // 78 - Whistle
+        [
+            "note.flute",
+            -12
+        ],
+        // 79 - Ocarina
+        [
+            "note.flute",
+            -12
+        ],
+        // 80 - Square Lead
+        [
+            "note.bit",
+            0
+        ],
+        // 81 - Sawtooth Lead
+        [
+            "note.trumpet",
+            0.5
+        ],
+        // 82 - Calliope Lead
+        [
+            "note.flute",
+            -12
+        ],
+        // 83 - Chiff Lead
+        [
+            "note.flute",
+            -12
+        ],
+        // 84 - Charang Lead
+        [
+            "note.bit",
+            0
+        ],
+        // 85 - Voice Lead
+        [
+            "note.flute",
+            -12
+        ],
+        // 86 - Fifths Lead
+        [
+            "note.bit",
+            0
+        ],
+        // 87 - Bass+Lead
+        [
+            "note.bit",
+            0
+        ],
+        // 88 - New Age Pad
+        [
+            "note.flute",
+            -12
+        ],
+        // 89 - Warm Pad
+        [
+            "note.flute",
+            -12
+        ],
+        // 90 - Polysynth Pad
+        [
+            "note.flute",
+            -12
+        ],
+        // 91 - Choir Pad
+        [
+            "note.flute",
+            -12
+        ],
+        // 92 - Bowed Pad
+        [
+            "note.flute",
+            -12
+        ],
+        // 93 - Metallic Pad
+        [
+            "note.flute",
+            -12
+        ],
+        // 94 - Halo Pad
+        [
+            "note.flute",
+            -12
+        ],
+        // 95 - Sweep Pad
+        [
+            "note.flute",
+            -12
+        ],
+        // 96 - Rain FX
+        [
+            "note.harp",
+            0
+        ],
+        // 97 - Soundtrack FX
+        [
+            "note.harp",
+            0
+        ],
+        // 98 - Crystal FX
+        [
+            "note.bit",
+            0
+        ],
+        // 99 - Atmosphere FX
+        [
+            "note.banjo",
+            0
+        ],
+        // 100 - Brightness FX
+        [
+            "note.harp",
+            0
+        ],
+        // 101 - Goblins FX
+        [
+            "note.harp",
+            0
+        ],
+        // 102 - Echoes FX
+        [
+            "note.harp",
+            0
+        ],
+        // 103 - Sci-fi FX
+        [
+            "note.harp",
+            0
+        ],
+        // 104 - Sitar
+        [
+            "note.banjo",
+            0
+        ],
+        // 105 - Banjo
+        [
+            "note.banjo",
+            0
+        ],
+        // 106 - Shamisen
+        [
+            "note.banjo",
+            0
+        ],
+        // 107 - Koto
+        [
+            "note.banjo",
+            0
+        ],
+        // 108 - Kalimba
+        [
+            "note.iron_xylophone",
+            0
+        ],
+        // 109 - Bagpipe
+        [
+            "note.didgeridoo",
+            24
+        ],
+        // 110 - Fiddle
+        [
+            "note.didgeridoo",
+            24
+        ],
+        // 111 - Shanai
+        [
+            "note.didgeridoo",
+            24
+        ],
+        // 112 - Tinkle Bell
+        [
+            "note.bell",
+            -12
+        ],
+        // 113 - Agogo
+        [
+            "note.harp",
+            0
+        ],
+        // 114 - Steel Drums
+        [
+            "note.iron_xylophone",
+            0
+        ],
+        // 115 - Woodblock
+        [
+            "note.click",
+            0
+        ],
+        // 116 - Taiko Drum
+        [
+            "note.snare",
+            0
+        ],
+        // 117 - Melodic Tom
+        [
+            "note.snare",
+            0
+        ],
+        // 118 - Synth Drum
+        [
+            "note.snare",
+            0
+        ],
+        // 119 - Reverse Cymbal
+        [
+            "random.fuse",
+            0
+        ],
+        // 120 - Guitar Fret Noise
+        [
+            "",
+            0
+        ],
+        // 121 - Breath Noise
+        [
+            "mob.phantom.idle",
+            0
+        ],
+        // 122 - Seashore
+        [
+            "ambient.weather.rain",
+            0
+        ],
+        // 123 - Bird Tweet
+        [
+            "mob.parrot.idle",
+            0
+        ],
+        // 124 - Telephone Ring
+        [
+            "random.orb",
+            0
+        ],
+        // 125 - Helicopter
+        [
+            "",
+            0
+        ],
+        // 126 - Applause
+        [
+            "mob.phantom.idle",
+            0
+        ],
+        // 127 - Gunshot
+        [
+            "random.explode",
+            0
+        ],
+        [
+            "random.anvil_land",
+            0
+        ]
+    ]
+}
