@@ -1,5 +1,5 @@
 # MusicBox
-My amazing plugin description that I forgot to change for some reason.
+A Minecraft MIDI Player.
 
 - By **OrangeCash090**
 
