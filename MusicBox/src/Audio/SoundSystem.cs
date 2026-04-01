@@ -86,15 +86,9 @@ public class SoundSystem {
 
 		if (string.IsNullOrEmpty(instrument.sound)) return;
 
-		if (followPlayer) {
-			_commandQueue.QueueCommand(
-				$"/playsound {instrument.sound} @a ~~~ {volume} {pitch}"
-			);
-		} else {
-			_commandQueue.QueueCommand(
-				$"/playsound {instrument.sound} @a {position.X} {position.Y} {position.Z} {volume} {pitch}"
-			);
-		}
+		_commandQueue.QueueCommand(
+			followPlayer ? $"/playsound {instrument.sound} @a ~~~ {volume} {pitch}" : $"/playsound {instrument.sound} @a {position.X} {position.Y} {position.Z} {volume} {pitch}"
+		);
 	}
 
 	public void PlayNoteWorld(NoteOnEvent message, int program, NoteType noteType, BlockPos position, bool followPlayer = false) {
@@ -122,6 +116,8 @@ public class SoundSystem {
 	public void Update() {
 		if (Onix.LocalPlayer!.PermissionLevel == PlayerPermissionLevel.Operator) {
 			_commandQueue.AdvanceQueue();
+		} else {
+			_commandQueue.Clear();
 		}
 	}
 }
